@@ -5,7 +5,7 @@
 
 Ενδεικτικές φωτογραφίες:
 ___
-![Αξιολόγηση Δίσκου](https://i.imgur.com/wnU4Jy2.gif)
+![Αξιολόγηση Δίσκου](https://github.com/Al-Christodoulou/BandWebpage/assets/99661503/62748ed4-2c51-4b6d-96ac-848ee0af1956)
 ___
 ![Κύρια σελίδα](https://i.imgur.com/TKyHWUN.png)
 ___
