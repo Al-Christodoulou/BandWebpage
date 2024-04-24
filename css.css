@@ -1,0 +1,91 @@
+body {
+	background-color: rgb(20, 20, 20);
+	color: wheat;
+	font-size: x-large;
+	text-align: center;
+}
+
+h1 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	color: cornflowerblue;
+	font-size: 200%;
+}
+
+h2 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	color: forestgreen;
+	font-size: 150%;
+}
+
+div.parallel {
+	display: flex; justify-content: space-around;
+	text-align: left;
+}
+
+table.menu {
+	border-color: orange;
+	border-style: groove;
+	border-width: 10px;
+	
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+table.lightbluemenu {
+	border-color: lightblue;
+	border-style: groove;
+	border-width: 10px;
+	
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+a.menu {
+	color: orange;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+a.lightbluemenu {
+	color: lightblue;
+	font-weight: bold;
+	font-size: 150%;
+
+	text-shadow: 2px 2px 5px #000000;
+}
+
+h2.menu {
+	color: red;
+	font-size: xx-large;
+}
+
+.concertfont {
+	color:papayawhip;
+	font-weight:800;
+	text-shadow: 2px 2px 5px #000000;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info {
+	color:beige;
+	font-weight: 500;
+	text-shadow: 5px 5px 6px #333333;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span.infofirstletter {
+	font-weight: 800;
+	font-size: 200%;
+}
+
+p.copyright {
+	color: gray;
+	font-size: small;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Διαγωνισμός</title>
+		<link rel="stylesheet" href="css.css">
+		<script src="competition.js"></script>
+	</head>
+
+	<body>
+		<div style="background-image: url(concert_blur.jpg); background-attachment: fixed; background-size: cover;" id="pageimage">
+			<br>
+			<h1 style="border-color: royalblue; border-width: 5px; border-style: groove; display:ruby;">Διαγωνισμός!</h1>
+
+			<br><br>
+			<table width="100%" class="lightbluemenu">
+				<tr>
+					<td><a class="lightbluemenu" target="_blank" href="members.html">Τα Μέλη</a> </td>
+					<td><a class="lightbluemenu" target="_blank" href="history.html">Ιστορία</a> </td>
+					<td><a class="lightbluemenu" target="_blank" href="mainpage.html">Σχετικά με</a> </td>
+					<td><a class="lightbluemenu" target="_blank" href="review.html">Αξιολόγηση</a> </td>
+					<td><a class="lightbluemenu">Διαγωνισμός</a> </td>
+				</tr>
+			</table><br><br>
+
+			<p class="concertfont"><span class="infofirstletter">Τ</span>α Ημισκούμπρια πραγματοποιούν διαγωνισμό με δώρο διπλό εισιτήριο για μελλοντική συναυλία!</p>
+
+			<br><br><br><br><br>
+			<div id="firstquestion">
+				<label for="num_of_people"><span class="concertfont">Δώστε πλήθος ατόμων οι οποίοι συμμετέχουν στον διαγωνισμό: </span></label>
+				<input type="text" id="num_of_people">
+				<input type="button" id="confirmButton" value="Υποβολή">
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <!-- Αυτά τα <br> διαγράφονται αφού πατήσουμε 'Υποβολή' στον αριθμό ατόμων -->
+			</div>
+		</div>
+
+		<script>
+			confirmButton = document.getElementById("confirmButton");
+			
+			confirmButton.onclick = function() {
+				num_of_people = parseInt(document.getElementById("num_of_people").value);
+
+				removeFirstQuestion(); 
+				setupButtons(num_of_people); 
+				endBreakingSpaces(num_of_people);
+			};
+		</script>
+	</body>
+
+</html>

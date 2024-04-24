@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Αξιολόγηση δίσκων</title>
+		<link rel="stylesheet" href="css.css">
+	</head>
+
+	<body>
+		<div style="background-image: url(7Free-Dark-Textured-Backgrounds.webp); background-attachment: fixed; background-size: cover;">
+			<h1>Αξιολόγηση δίσκων</h1>
+			
+			<table width="100%" class="menu">
+				<tr>
+					<td class="menu"><a class="menu" target="_blank" href="members.html">Τα Μέλη</a> </td>
+					<td class="menu"><a class="menu" target="_blank" href="history.html">Ιστορία</a> </td>
+					<td class="menu"><a class="menu" target="_blank" href="mainpage.html">Σχετικά με</a> </td>
+					<td class="menu"><a class="menu">Αξιολόγηση</a> </td>
+					<td class="menu"><a class="menu" target="_blank" href="competition.html">Διαγωνισμός</a> </td>
+				</tr>
+			</table><br><br>
+			
+			<!-- Δίσκος 1 -->
+			<div class="parallel">
+				<div style="text-align: center;"> <!-- Εδώ γίνεται center για την εικόνα και το h2 -->
+					<h2 style="color: aqua">30 Χρόνια Επιτυχίες</h2>
+					<img src="musicdisk0.jpg">
+					<img src="fourstars.png" width="400px">
+				</div>
+				<p>&nbsp&nbsp&nbsp</p>
+				<div>
+					<br><br><br><br>
+					<p class="concertfont"><span class="infofirstletter">Ο</span> δίσκος 30 Χρόνια Επιτυχίες κυκλοφόρησε το 1996 από την <span style="color: blue">FM Records</span> και ήταν η πρώτη επίσημη δουλειά του hip-hop συγκροτήματος Ημισκούμπρια.</p>
+					<p class="concertfont">Περιέχει τις επιτυχίες "<ins>Το Βουκολικό</ins>",
+						"<ins>Ο Μοναχός</ins>", "<ins>Η Απολλώνεια Κορμάρα</ins>" και το 
+						"<ins>Καταλάβατε Ή Να Κάνω Και Κακά</ins>".</p>
+					<p class="concertfont">Άγγιξε τις 30 χιλιάδες πωλήσεις και έγινε ο πρώτος χρυσός ελληνικός hip-hop δίσκος.
+						Επανακυκλοφόρησε το 2005 από την ίδια δισκογραφική μαζί με το δίσκο Ο Δίσκος που Διαφημίζετε.</p>
+				</div>
+			</div>
+
+			<br>
+
+			<!-- Δίσκος 2 -->
+			<div class="parallel">
+				<div style="text-align: center;">
+					<h2>Ο Δίσκος που Διαφημίζετε</h2>
+					<img src="musicdisk1.jpg" width="630px">
+					<img src="fourandahalfstars.png" width="400px">
+				</div>
+				<p>&nbsp&nbsp&nbsp</p>
+				<div>
+					<br><br><br><br>
+					<p class="concertfont"><span class="infofirstletter">Ο</span> δίσκος που διαφημίζετε είναι ο δεύτερος δίσκος του συγκροτήματος Ημισκούμπρια που κυκλοφόρησε στις 13 Μαΐου 1997 από την <span style="color: blue">FM Records</span>.</p>
+					<p class="concertfont">Μετά τον χρυσό δίσκο του συγκροτήματος, <span style="color:chocolate">30 χρόνια επιτυχίες</span>, Ο δίσκος που διαφημίζετε έγινε πλατινένιος και πολλοί από τους θαυμαστές τους, τον θεωρούν και τον καλύτερο όλης της δισκογραφίας τους.</p>
+					<p class="concertfont">Περιέχει πολλές επιτυχίες όπως τα
+						"<ins>Στη Ντισκοτέκ</ins>", "<ins>Ο κύρης του σπιτιού</ins>", "<ins>Je suis bossu</ins>", "<ins>Η γάτα της σκεπής</ins>",
+						"<ins>Άσε τον ουρακοτάγκο</ins>" και "<ins>Ο διάβολος κατέβηκε στο Χολαργό</ins>".</p>
+				</div>
+			</div>
+
+			<br><br>
+
+			<h1 style="text-decoration: underline;">Αξιολόγηση ενός δίσκου</h1>
+			<h2 style="font-size: 90%; text-decoration: none;">Αξιολογήστε οποιονδήποτε δίσκο των Ημισκούμπρια</h2>
+
+			<form id="reviewform" method="post" action="review.php">
+				<label class="concertfont" for="username">Ψευδώνυμο: </label>
+				<input required type="text" id="username" name="username"><br>
+
+				<label class="concertfont" for="disk_name">Όνομα δίσκου: </label>
+				<input required type="text" id="disk_name" name="disk_name"><br>
+
+				<label class="concertfont" for="disk_date">Ημερομηνία κυκλοφορίας δίσκου: </label>
+				<input required type="date" id="disk_date" name="disk_date"><br>
+
+				<label class="concertfont" for="review">Κριτική: </label>
+				<textarea cols="30" rows="4" id="review" name="review_text"></textarea><br>
+
+				<label class="concertfont" for="grade">Βαθμός αξιολόγησης (αστέρια): </label>
+				<input required type="number" id="grade" name="grade" min="1" max="5"><br>
+
+				<input type="reset" value="Reset"><br><br>
+
+				<input style="width: 500px; font-size: 20px; font-weight: bold;" id="confirmbutton" type="submit" value="Τελική υποβολή">
+			</form>
+
+			<br><br>
+			<p class="copyright">© 2022 Copyright Ημισκούμπρια. Με επιφύλαξη κάθε νόμιμου δικαιώματος.</p>
+		</div>
+	</body>
+
+</html>
